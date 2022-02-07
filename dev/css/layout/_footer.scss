@@ -1,6 +1,61 @@
-.footer-up{
-    background: #222222;
-}
-.footer-end{
-    background: #111111;
+footer{
+    background: #04091e;
+    .footer-content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2%;
+        padding: 8% 0 4% 0;
+        margin: 0 1%;
+    }
+    .footer-insta{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2%;
+    }
+    .footer-bot{
+        border-top: 1px solid #333333;
+        .footer-bot-inside{
+            display: flex;
+            justify-content: space-between;
+            padding: 4% 0 10% 0;
+            margin: 0 1%;
+        }
+        i, a{
+            color: $color_base;
+        }
+        .footer-socials{
+            width: 16%;
+            i{
+                padding: 0 6%;
+                color: #cccccc;
+                &:hover{
+                    color: $color_base;
+                }
+            }
+        }
+    }
+    .e-mail{
+        input{
+            background: transparent;
+            border: 1px solid #333333;
+            line-height: 1.84rem;
+            color: $color_7;
+            padding-left: 6%;
+            width: 80%;
+        }
+        .btn{
+            margin-left: -2%;
+        }
+    }
+    .nav-footer{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        a{
+            color: $color_7;
+            &:hover{
+                color: $color_base;
+            }
+        }
+    }
 }

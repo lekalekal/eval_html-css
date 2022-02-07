@@ -1,3 +1,8 @@
+*{
+    ::selection{
+        background: $color_base;
+    }
+}
 body{
     font-family: $font_base;
     color: $color_7;
@@ -24,35 +29,38 @@ h1{
 h2{
     font-size: 36px;
     font-weight: 600;
-    line-height: 2rem;
+    line-height: 2.8rem;
     color: $color_two;
 }
 h3{
     font-size: 18px;
+    color: $color_two;
 }
-section:not(.section-top){
+h4{
+    color: $color_white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6%;
+}
+ul, li{
+    list-style: none;
+}
+section:not(.section-top,.section-not-find){
     padding: 6% 0;
     text-align: center;
     p{
         margin: 1% 0;
-        padding-bottom: 6%;
+        padding-bottom: 4%;
     }
 }
 .rel{
     position: relative;
 }
-
 img{
     width: 100%;
-    height: 100%;
+    vertical-align: middle;
 }
-.transition-04{
-    transition: all 0.4s ease-in-out;
-}
-
-.bg-pattern1{
-    background: url("../img/pattern1.png");
-}
-.bg-pattern2{
-    background: url("../img/pattern2.png");
+.transition-03{
+    transition: all 0.3s ease-in-out;
 }
