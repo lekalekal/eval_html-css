@@ -1,16 +1,17 @@
 .btn{
-    text-transform: uppercase;
-    background: #ffffff;
-    padding: 2% 3%;
-    border-radius: 10px;
-    color: #ec1d25;
-    font-size: 0.8rem;
+    color: $color_white;
+    background: $color_base;
     letter-spacing: 0.04rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1% 3%;
     &:hover{
-        color: #ffffff;
-        background: #ec1d25;
+    color: $color_white;
+        background: $color_two;
     }
 }
+
+
 .btn-menu{
     text-transform: uppercase;
     background: #ffffff;
