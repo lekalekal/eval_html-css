@@ -1,9 +1,12 @@
-.section-top{
-    height: 100vh;
-    background: url("../img/hero-bg.jpg") center / cover;
+.page-home{
+
+    
+    .section-top{
+        height: 100vh;
+        background: url("../img/hero-bg.jpg") center / cover;
     @media screen and (max-width:760px){
         height: 40vh;
-
+        
     }
     &::before{
         content: "";
@@ -16,29 +19,32 @@
         height: 100%;
         z-index: 1;
         @media screen and (max-width:760px){
-        height: 40%;
-
+            height: 40%;
+            
     }
-    }
-        .section-top-inside{
-            position: relative;
+}
+.section-top-inside{
+    position: relative;
             z-index: 2;
             padding: 18% 1%;
             
             color: $color_white;
             @media screen and (max-width:760px){
             padding: 24% 1%;
-
+            
         }
-            span{
-                text-transform: uppercase;
+        span{
+            text-transform: uppercase;
                 font-weight: 400;
             }
             p{
                 margin: 20px 0;
             }
-    }
+        }
 }
+
+}
+
 
 .section-destinations-inside{
     width: 98%;
@@ -137,25 +143,8 @@
     }
     ul{
         margin-top: 10%;
-        li{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 4%;
-            .price-btn{
-                background: $color_three;
-                border: 1px solid #eeeeee;
-                color: $color_two;
-                font-weight: 600;
-                padding: 1% 8%;
-                transition: all 0.3s ease-in-out;
-                &:hover{
-                    color: $color_white;
-                    background: $color_base;
-                    transition: all 0.3s ease-in-out;
-                }
-            }
-        }
+        
+            
     }
 }
     }
@@ -236,16 +225,17 @@ flex-direction: column;
             border-radius: 50%;
         }
     }
-    .yellow{
-        color: orange;
-    }
+    
 }
 }
-
+.yellow{
+    color: orange;
+}
 
 .section-not-find-inside{
     display: flex;
     align-items: center;
+    background: $color_white;
     @media screen and (max-width:800px){
         flex-direction: column;
         text-align: center;
@@ -296,20 +286,5 @@ flex-direction: column;
     .date{
         color: $color_two;
     }
-    .tag{
-        color: $color_two;
-        font-weight: 400;
-        font-size: 12px;
-        border: 1px solid #eeeeee;
-        padding: 1% 3%;
-        margin: 4% 0;
-        display: inline-block;
-        transition: all 0.3s ease-in-out;
-
-        &:hover{
-            background: $color_base;
-            color: $color_white;
-            transition: all .3s ease-in-out;
-        }
-    }
+    
 }

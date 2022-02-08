@@ -1,31 +1,8 @@
 .page-contact{
-    background: $color_three;
     .section-top{
-        height: 36vh;
         background: url("../img/hero-contact.jpg") center / cover;
-        &::before{
-            height: 36%;
         }
 
-        }
-
-        .section-top-inside {
-            padding: 130px 1%;
-            text-align: center;
-            a{
-
-                color: $color_white;
-            }
-            i{
-                padding: 0 1%;
-            }
-            h1{
-                font-size: 3rem;
-                text-transform: none;
-            }
-        }
-
-}
 
 .section-map-inside{
     iframe{
@@ -66,12 +43,22 @@ flex-direction: column;
 .contact-form{
     display: flex;
     width: 100%;
+    @media screen and (max-width:992px){
+
+    flex-direction: column;
+
+    }
 
     .left-inputs, .right-inputs{
         display: flex;
         flex-direction: column;
         width: 50%;
         padding-left: 4%;
+    @media screen and (max-width:992px){
+        width: 100%;
+
+
+    }
     }
     input, textarea{
         padding: 4%;
@@ -90,4 +77,5 @@ flex-direction: column;
 
 }
 
+}
 }

@@ -1,5 +1,6 @@
 *{
     ::selection{
+        color: $color_white;
         background: $color_base;
     }
 }
@@ -58,7 +59,7 @@ h5{
 ul, li{
     list-style: none;
 }
-section:not(.section-top,.section-not-find){
+section:not(.section-top,.section-not-find,.section-blog){
     padding: 6% 0;
     text-align: center;
     p{
@@ -75,4 +76,78 @@ img{
 }
 .transition-03{
     transition: all 0.3s ease-in-out;
+}
+
+.page{
+
+    background: $color_three;
+    .section-top{
+        height: 36vh;
+        &::before{
+
+                content: "";
+                background: #000000;
+                opacity: 0.4;
+                position: absolute;
+                top: 0;
+                left: 0;
+            height: 36%;
+
+                width: 100%;
+                z-index: 1;
+
+        }
+
+        }
+
+        .section-top-inside {
+            padding: 130px 1%;
+            text-align: center;
+            color: $color_white;
+            z-index: 2;
+            position: relative;
+
+            a{
+
+                color: $color_white;
+            }
+            i{
+                padding: 0 1%;
+            }
+            h1{
+                font-size: 3rem;
+                text-transform: none;
+            }
+        }
+
+}
+
+.provide, .package-list{
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+}
+}
+
+.bg-white{
+    background: $color_white;
+}
+
+.tag{
+    color: $color_two;
+    font-weight: 400;
+    font-size: 12px;
+    border: 1px solid #eeeeee;
+    padding: 1% 3%;
+    margin: 4% 0;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        background: $color_base;
+        color: $color_white;
+        transition: all .3s ease-in-out;
+    }
 }

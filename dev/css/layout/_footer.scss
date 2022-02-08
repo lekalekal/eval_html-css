@@ -64,7 +64,7 @@ footer{
         input{
             background: transparent;
             border: 1px solid #333333;
-            line-height: 1.84rem;
+            line-height: 1.8rem;
             color: $color_7;
             padding-left: 6%;
             width: 80%;
@@ -72,9 +72,10 @@ footer{
         }
         .btn{
             margin-left: -2%;
-            @media screen and (max-width:800px){
+            border: 1px solid #333333;
+            height: 2.15rem;
 
-            height: 33px;
+            @media screen and (max-width:800px){
             vertical-align: middle;
             i{
                 vertical-align: middle;

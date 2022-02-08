@@ -19,3 +19,30 @@
         background: $color_base;
 }
 }
+
+.price-btn{
+    background: $color_three;
+    border: 1px solid #eeeeee;
+    color: $color_two;
+    font-weight: 600;
+    padding: 1% 8%;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $color_white;
+        background: $color_base;
+        transition: all 0.3s ease-in-out;
+    }
+
+}
+
+.price-btn-inverse{
+    background: $color_base;
+    color: $color_two;
+    font-weight: 600;
+    padding: 0.6% 6%;
+    
+    &:hover{
+        color: $color_two;
+
+    }
+}
