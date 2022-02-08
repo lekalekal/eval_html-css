@@ -1,0 +1,93 @@
+.page-contact{
+    background: $color_three;
+    .section-top{
+        height: 36vh;
+        background: url("../img/hero-contact.jpg") center / cover;
+        &::before{
+            height: 36%;
+        }
+
+        }
+
+        .section-top-inside {
+            padding: 130px 1%;
+            text-align: center;
+            a{
+
+                color: $color_white;
+            }
+            i{
+                padding: 0 1%;
+            }
+            h1{
+                font-size: 3rem;
+                text-transform: none;
+            }
+        }
+
+}
+
+.section-map-inside{
+    iframe{
+        width: 100%;
+padding: 0 2%;
+
+    }
+}
+
+.section-contact-form{
+padding-top: 0 !important;
+.section-contact-form-content{
+display: flex;
+margin: 0 2%;
+@media screen and (max-width:992px){
+flex-direction: column;
+}
+    .contact-info{
+        display: flex;
+    flex-direction: column;
+    width: 40%;
+    @media screen and (max-width:992px){
+        width: 100%;
+    padding-left: 4%;
+    margin-bottom: 4%;
+    }
+    i{
+        color: $color_base;
+        font-size: 2rem;
+        padding-right: 2.6%;
+    }
+    .contact-info-line{
+        display: flex;
+        text-align: left;
+        padding-bottom: 1%;
+    }
+}
+.contact-form{
+    display: flex;
+    width: 100%;
+
+    .left-inputs, .right-inputs{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 4%;
+    }
+    input, textarea{
+        padding: 4%;
+        margin-bottom: 6%;
+    }
+    textarea{
+        height: 212px;
+        
+        
+    }
+    .btn{
+        width: 60%;
+        margin-left: 40%;
+    }
+}
+
+}
+
+}
