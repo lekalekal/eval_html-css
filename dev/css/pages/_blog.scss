@@ -1,11 +1,8 @@
 .page-blog{
     .section-top{
         background: url("../img/hero-blog.jpg") center / cover;
-        }
-        
-        
+    }
 }
-
 .blog-all{
     display: grid;
     grid-template-columns: 70% 30%;
@@ -40,7 +37,6 @@
         }
     }
 }
-
 aside{
     background: #fafaff;
     border: 1px solid #eeeeee;
@@ -48,30 +44,50 @@ aside{
     .single-aside{
         border-bottom: 1px solid #eeeeee;
         margin: 10%;
-    padding-bottom: 10%;
+        padding-bottom: 10%;
     }
     .aside-h4{
         background: $color_base;
-        padding: 2% 10%;
+        padding: 4% 10%;
         text-transform: none;
         font-size: 1.2rem;
     }
     .post-single{
         display: flex;
-        
+        padding: 4% 0;
     }
     .post-single-text{
-        display: flex;
-        flex-direction: column;
         text-align: left;
+        padding-left: 4%;
+        width: 74%;
+        h3{
+            font-size: 14px;
+        }
     }
     .cat-list{
         li{
             border-bottom: 2px dotted #eeeeee;
+        transition: all 0.3s ease-in-out;
+padding: 4% 0;
+            &:hover{
+            border-bottom: 2px dotted $color_base;
+            transition: all 0.3s ease-in-out;
+
+            }
         }
         a{
             display: flex;
             justify-content: space-between;
+            color: $color_7;
+            &:hover{
+                color: $color_base;
+            }
+        }
+    }
+    .tags-aside{
+        text-align: left;
+        .tag{
+            margin: 2% 0;
         }
     }
 }

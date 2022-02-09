@@ -23,13 +23,11 @@ a{
     }
 }
 h1{
-    // font-size: 60px;
     font-size: calc(16px + 2.8vw);
     margin: 3% 0;
     text-transform: uppercase;
 }
 h2{
-    // font-size: 36px;
     font-size: calc(14px + 1.2vw);
     font-weight: 600;
     line-height: 2.8rem;
@@ -46,7 +44,6 @@ h4{
     font-weight: 600;
     margin-bottom: 6%;
     @media screen and (max-width:1260px){
-
         margin-bottom: 3%;
     }
 }
@@ -74,67 +71,60 @@ img{
     width: 100%;
     vertical-align: middle;
 }
+.img-block{
+    overflow: hidden;
+}
 .transition-03{
     transition: all 0.3s ease-in-out;
 }
-
 .page{
-
     background: $color_three;
     .section-top{
         height: 36vh;
         &::before{
-
-                content: "";
-                background: #000000;
-                opacity: 0.4;
-                position: absolute;
-                top: 0;
-                left: 0;
+            content: "";
+            background: #000000;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
             height: 36%;
-
-                width: 100%;
-                z-index: 1;
-
+            width: 100%;
+            z-index: 1;
         }
-
-        }
-
-        .section-top-inside {
-            padding: 130px 1%;
-            text-align: center;
+    }
+    .section-top-inside {
+        padding: 130px 1%;
+        text-align: center;
+        color: $color_white;
+        z-index: 2;
+        position: relative;
+        a{
             color: $color_white;
-            z-index: 2;
-            position: relative;
-
-            a{
-
-                color: $color_white;
-            }
-            i{
-                padding: 0 1%;
-            }
-            h1{
-                font-size: 3rem;
-                text-transform: none;
-            }
         }
-
+        i{
+            padding: 0 1%;
+        }
+        h1{
+            font-size: 3rem;
+            text-transform: none;
+        }
+    }
 }
-
 .provide, .package-list{
-li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4%;
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4%;
+    }
 }
-}
-
 .bg-white{
     background: $color_white;
 }
-
+.yellow{
+    color: orange;
+}
 .tag{
     color: $color_two;
     font-weight: 400;
@@ -144,7 +134,6 @@ li{
     margin: 4% 0;
     display: inline-block;
     transition: all 0.3s ease-in-out;
-
     &:hover{
         background: $color_base;
         color: $color_white;

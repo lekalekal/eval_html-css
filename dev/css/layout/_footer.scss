@@ -1,5 +1,5 @@
 footer{
-    background: #04091e;
+    background: $color_four;
     .footer-content{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -8,43 +8,39 @@ footer{
         margin: 0 1%;
         @media screen and (max-width:992px){
             grid-template-columns: repeat(2, 1fr);
-            }
-    @media screen and (max-width:800px){
-        grid-template-columns: 100%;
-        padding-bottom: 20%;
-        h4{
-            margin-top: 3%;
         }
-    }
+        @media screen and (max-width:800px){
+            grid-template-columns: 100%;
+            padding-bottom: 20%;
+            h4{
+                margin-top: 3%;
+            }
+        }
     }
     .footer-insta{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         &>*{
-
-    @media screen and (max-width:800px){
-        gap: 30px;
-
-        width: 40%;
-    }
+            @media screen and (max-width:800px){
+                gap: 30px;
+                width: 40%;
+            }
         }
     }
     .footer-bot{
         border-top: 1px solid #333333;
-        
         .footer-bot-inside{
             display: flex;
             justify-content: space-between;
             padding: 4% 0 10% 0;
             margin: 0 1%;
-    @media screen and (max-width:800px){
-        flex-direction: column;
-        .footer-socials{
-        padding-top: 3%;
-
-        }
-    }
+            @media screen and (max-width:800px){
+                flex-direction: column;
+                .footer-socials{
+                    padding-top: 3%;
+                }
+            }
         }
         i, a{
             color: $color_base;
@@ -74,12 +70,11 @@ footer{
             margin-left: -2%;
             border: 1px solid #333333;
             height: 2.15rem;
-
             @media screen and (max-width:800px){
-            vertical-align: middle;
-            i{
                 vertical-align: middle;
-            }
+                i{
+                    vertical-align: middle;
+                }
             }
         }
     }
